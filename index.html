@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <!-- Bootstrap core CSS -->
+    <style>,
+      #intro {
+          height: 100%;
+      }
+
+      #intro {
+          background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHDfo5J7R_K8BEzY5Odv8BUNCpNFdndfZx6w&usqp=CAU")no-repeat center center fixed;
+          -webkit-background-size: cover;
+          -moz-background-size: cover;
+          -o-background-size: cover;
+          background-size: cover;
+      }
+
+      .card { 
+        -webkit-transition-duration: 0.5s; 
+        -moz-transition-duration: 0.5s; 
+        -o-transition-duration: 0.5s; 
+        } 
+      .card:hover { 
+        -webkit-transform:scale(1.2); 
+        -moz-transform:scale(1.2); 
+        -o-transform:scale(1.2); 
+        opacity: 1; 
+        z-index: 2; 
+        }
+
+      table.scroll {
+        width:700px;
+        margin-left:auto;
+        margin-right:auto;
+        border-collapse: collapse;
+        border-spacing: 0;
+        border: 1px solid #ddd;
+      }
+      table.scroll thead {
+        display:table;
+        color:white;
+        background-color: gray;
+      }
+      table.scroll tbody {
+        display:block;
+        height:300px;
+        overflow:auto;
+        float:left;
+        width:100%;
+        margin-left:auto;
+        margin-right:auto;
+
+      }
+      table.scroll th, td {
+        width:33%;
+        padding:8px;
+      }
+      tr:nth-child(even) {
+        background-color: #f2f2f2;
+      }
+
+    </style>
+
+    <title>Pantau Data Virus Covid 19</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark fixed-top scrolling-navbar">
+      <a class="navbar-brand text-white" href="#">UPDATE DATA COVID-19</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link text-white" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#info">Info</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#berita">Berita</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled text-white" href="#kasus">Kasus</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
+      <div id="intro" class="view">
+        <div class="container-fluid d-flex align-items-center justify-content-center h-100">
+          <div class="row d-flex justify-content-center text-center">
+            <div class="col-md-10">
+              <!-- Heading -->
+              <h2 class="display-4 font-weight-bold text-white pt-5 mb-2">CORONA VIRUS</h2>
+              <!-- Divider -->
+              <hr class="hr-light">
+              <!-- Description -->
+              <h4 class="text-white my-4">Virus Corona atau severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2) adalah virus yang menyerang sistem pernapasan. Penyakit karena infeksi virus ini disebut COVID-19. Virus Corona bisa menyebabkan gangguan ringan pada sistem pernapasan, infeksi paru-paru yang berat, hingga kematian.</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <style type="text/css">
+      .box {
+        padding: 30px 40px;
+        border-radius: 6px;
+      }
+    </style>
+
+      <hr class="my-5">
+      <div id="kasus">
+      <div class="container">
+        <div class="row mt-4">
+              <div class="col-md-12">
+                <div class="box bg-dark text-center text-white">
+                  <h2 class="display-4 font-weight-bold text-white">COVID-19</h2>
+                  <h4>CORONA VIRUS GLOBAL & INDONESIA LIVE DATA</h4>
+                  <h4>MARI SEMUA JAGA KESEHATAN</h4>
+                </div>
+              </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 mt-3">
+            <div class="box bg-danger text-white">
+              <div class="row">
+                <div class="col-md-6">
+                  <h5>Positif</h5>
+                  <h2 id="data-kasus">1234</h2>
+                  <h5>Orang</h5>
+                </div>
+                <div class="col-md-4">
+                  <div>
+                    <img src="https://jatimnow.com/apps/view/img/logo_masker.png" style="width: 100px;">
+                  </div>    
+                </div>  
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 mt-3">
+            <div class="box bg-success text-white">
+              <div class="row">
+                <div class="col-md-6">
+                  <h5>Sembuh</h5>
+                  <h2 id="data-sembuh">1234</h2>
+                  <h5>Orang</h5>
+                </div>
+                <div class="col-md-4">
+                  <div>
+                    <img src="https://i.pinimg.com/originals/20/ba/43/20ba43ed9a5b7f8b323f84f479e09347.png" style="width: 100px;">
+                  </div>    
+                </div>  
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 mt-3">
+            <div class="box bg-secondary text-white">
+              <div class="row">
+                <div class="col-md-6">
+                  <h5>Meninggal</h5>
+                  <h2 id="data-mati">1234</h2>
+                  <h5>Orang</h5>
+                </div>
+                <div class="col-md-4">
+                  <div>
+                    <img src="https://4.bp.blogspot.com/-VAS1nbIqfkk/WIPznOSs3nI/AAAAAAAAAWI/y_f9A1m1fhcJh3CW6QYcuYGPqzCA_tiGQCLcB/s1600/2.png" style="width: 100px;">
+                  </div>    
+                </div>  
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-12 mt-3">
+            <div class="box bg-primary text-white">
+              <div class="row">
+                <div class="col-md-3">
+                  <h2>INDONESIA</h2>
+                  <h5 id="data-id">Positif : 10 orang <br> Sembuh : 5 orang  <br> Meninggal : 20 orang</h5>                   
+                </div>
+                <div class="col-md-4">
+                  <div>
+                    <img src="https://flagpedia.net/data/flags/emoji/facebook/256x256/id.png" style="width: 150px;">
+                  </div>    
+                </div>  
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      <div class="card mt-5">
+        <table class="scroll" id="tableId" border="1" cellspacing="0">
+          <thead>
+            <th>Country</th>
+            <th>Cases</th>
+            <th>Recovered</th>
+            <th>Deaths</th>
+          </thead>
+          <tbody class="scroll" id="table-data" border="1" cellspacing="0">
+            
+          </tbody>
+        </table>
+      </div>
+
+      <hr class="my-5">
+      <div class="container">
+        <!--Grid row-->
+        <div class="row">
+          <div class="col-md-12">
+            <!--Excerpt-->
+              <h1 id="info">GEJALA</h1>
+                <p style="text-align:justify;">
+                  Tanda dan gejala umum infeksi COVID-19 antara lain gejala gangguan pernapasan akut seperti batuk kering, demam ≥380C, dan sesak napas.Tanda-tanda dan gejala klinis yang dilaporkan pada sebagian besar kasus adalah demam, dengan beberapa kasus mengalami kesulitan bernapas, dan hasil rontgen menunjukkan infiltrat pneumonia luas di kedua paru.
+                  <a href="https://infeksiemerging.kemkes.go.id/">Sumber - Kementerian Kesehatan Republik Indonesia</a>
+                </p>
+          </div>
+        </div>
+
+        <!--Grid row-->
+        <div class="row">
+          <!--Grid column-->
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="view overlay z-depth-1-half">
+              <img src="https://asset-a.grid.id/crop/0x0:0x0/x/photo/2020/02/27/1473624803.jpg" class="img-fluid" alt="simple70" height="300" width="350">
+            </div>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="view overlay z-depth-1-half">
+              <img src="https://static.republika.co.id/uploads/images/inpicture_slide/mitos-dan-fakta-seputar-demam-_190129121313-849.png" class="img-fluid" alt="simple70" height="300" width="350">
+            </div>
+          </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="view overlay z-depth-1-half">
+              <img src="https://cdn.akurat.co/images/uploads/images/akurat_20200907033739_664q01.jpg" class="img-fluid" alt="simple70" height="300" width="350">
+            </div>
+          </div>
+        <!--Grid column-->
+        </div>
+        <!--Grid row-->
+        <div class="alert alert-danger" role="alert" style="text-align:justify;">Hubungi dokter Anda jika Anda memiliki gejala dan telah melakukan kontak dekat dengan seseorang yang diketahui memiliki <a href="https://covid19.kemkes.go.id/situasi-infeksi-emerging/daftar-negara-terjangkit-penyakit-infeksi-emerging-5/#.XnJXragzY2w">COVID-19</a>, atau baru-baru ini bepergian dari daerah dengan penyebaran komunitas COVID-19 yang meluas / berkelanjutan.
+        </div>
+
+        <h2 id="info" class="mb-5 font-weight-bold text-center">Penerapan perilaku 3M untuk mencegah penularan virus Corona, yakni sebagai berikut:</h2>
+        <div class="row">
+          <div class="col-md-6 mb-4">
+          <!-- Divider -->
+          <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block w-100" src="https://media-origin.kompas.tv/library/image/thumbnail/1580164015/THUMB_CARA_MEMAKAI_MASKER_DENGAN_BENAR1580164015.jpg" alt="First slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="https://cdn0-production-images-kly.akamaized.net/BHRnoM5MPDi4njCoD5_3kYpBm5U=/673x379/smart/filters:quality(75):strip_icc():format(jpeg)/kly-media-production/medias/3258530/original/025407800_1601905834-Banner_infografis_cuci_tangan.jpg" alt="Second slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="https://covid19.go.id/storage/app/uploads/public/5e9/736/f51/5e9736f51dba9267670554.jpg" alt="Third slide">
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-6" style="text-align:justify;">
+          <!--Excerpt-->
+            <h4>Memakai Masker</h4>
+              <p>
+                Memakai Masker kain dapat menurunkan risiko penularan COVID-19 sebesar 45 persen. Lebih baik lagi adalah mengenakan masker bedah yang mampu menekan penyebaran virus COVID-19 hingga 70 persen.
+              </p>
+            <h4>Mencuci tangan</h4>  
+              <p>
+                Mencuci tangan merupakan langkah 3M berikutnya untuk menurunkan risiko penularan COVID-19 sebesar 35 persen. WHO menyarankan, cucilah tangan menggunakan sabun/antiseptik selama 20-30 detik dan menerapkan langkah-langkah yang benar.
+              </p>
+            <h4>Menjaga Jarak</h4>
+              <p>
+                Penerapan 3M yang paling utama adalah menjaga jarak atau social distancing dengan jarak minimal 1 meter, termasuk dengan menghindari kerumunan.
+              </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6 mt-3">
+          <h1 style="color:gray">Apa yang harus dilakukan jika Anda sakit</h1> 
+          <h5><a href="https://covid19.kemkes.go.id/download/REV-03_Pedoman_P2_COVID-19_Maret2020.pdf">Lihat semua langkah dari Kementerian Kesehatan Republik Indonesia di sini</a></h5>         
+        </div>
+        <div class="col-md-6 mt-3">
+          <div class="alert alert-danger" role="alert" style="text-align:justify;">Hubungi dokter Anda: Jika Anda merasa terpapar COVID-19 dan mengalami demam dan gejala penyakit pernapasan, seperti batuk atau kesulitan bernapas, segera hubungi penyedia layanan kesehatan Anda.
+          </div>
+        </div> 
+      </div>
+
+      <div class="row">
+        <div class="col-lg-3 col-md-6 mt-3 text-center">
+          <h1 class="font-weight-bold text-center">1</h1>
+          <h5>Tetap di rumah kecuali untuk mendapatkan perawatan medis</h5>
+        </div>
+        <div class="col-lg-3 col-md-6 mt-3 text-center">
+          <h1 class="font-weight-bold text-center">2</h1>
+          <h5>Pisahkan diri Anda dari orang lain dan hewan di rumah Anda</h5>
+        </div>
+        <div class="col-lg-3 col-md-6 mt-3 text-center">
+          <h1 class="font-weight-bold text-center">3</h1>
+          <h5>Telepon dulu sebelum mengunjungi dokter</h5>
+        </div>
+        <div class="col-lg-3 col-md-6 mt-3 text-center">
+          <h1 class="font-weight-bold text-center">4</h1>
+          <h5>Tutupi batuk dan sering-seringlah membersihkan tangan</h5>
+        </div>
+      </div>
+
+      <div class="row mt-5">
+        <div class="col-md-6 mt-3">
+          <div class="alert alert-warning" role="alert" style="text-align:justify;">Tidak ada batasan usia orang-orang dapat terinfeksi oleh coronavirus ini (COVID-19). Namun orang yang lebih tua, dan orang-orang dengan kondisi medis yang sudah ada sebelumnya (seperti asma, diabetes, penyakit jantung, atau tekanan darah tinggi) tampaknya lebih rentan untuk menderita sakit parah.Silakan berkonsultasi dengan penyedia layanan kesehatan Anda tentang langkah-langkah tambahan yang dapat Anda ambil untuk melindungi diri.
+          </div>
+        </div>
+        <div class="col-md-6 mb-4 mt-3">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/ftNCj06d7KE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+
+      <hr class="my-5">
+      <h2 id="berita" class="mb-5 font-weight-bold text-center">BERITA TERBARU</h2>
+        <div class="row ">
+          <div class="col-md-4">
+            <div class="card" style="width: 20rem;">
+              <img src="https://asset.kompas.com/crops/XI3JSGbidpumRIzbWVw0_RRKDxw=/0x0:1000x667/750x500/data/photo/2020/09/12/5f5cb48d23b3b.jpg" class="card-img-top" alt="simple70" height="200" width="500">
+              <div class="card-body">
+                <p id="articles" style="text-align:justify;">"KOMPAS.com - Penelitian terkait virus corona Covid-19 terus dilakukan di berbagai negara oleh para ilmuwan. Salah satu penelitian terbaru adalah terkait gejala Covid-19. Dikutip dari Anadolu Agency, Selasa (9/12/2020)..."</p>
+                <a href="https://www.kompas.com/tren/read/2020/12/09/123203865/penelitian-terbaru-gejala-covid-19-dapat-bertahan-lebih-dari-6-minggu?page=all" class="btn btn-primary">Baca Selengkapnya</a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-md-4">
+            <div class="card" style="width: 20rem;">
+              <img src="https://asset.kompas.com/crops/B7zy9Zib21rV6xEVtR5g-uI1B-4=/0x28:593x423/780x390/filters:watermark(data/photo/2020/03/10/5e6775d943eeb.png,0,-0,1)/data/photo/2020/12/09/5fd014d4de13e.png" class="card-img-top" alt="simple70" height="200" width="500">
+              <div class="card-body">
+                <p id="articles" style="text-align:justify;">"JAKARTA, KOMPAS.com - Kontestan Indonesian Idol Special Season, Melisha Sidabutar meninggal dunia pada Selasa (8/12/2020).\r\nMelisha meninggal setelah mengalami pembengkakan jantung. Namun, tidak dike… [+1566 chars]"</p>
+                <a href="https://www.kompas.com/hype/read/2020/12/09/190722566/sebelum-meninggal-dunia-melisha-sidabutar-sering-mengeluh-sesak-napas" class="btn btn-primary">Baca Selengkapnya</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card" style="width: 20rem;">
+              <img src="https://ichef.bbci.co.uk/news/800/cpsprodpb/A1D4/production/_111982414_antarafoto-aktivitas-gunung-merapi-120420-hnd-2.jpg" class="card-img-top" alt="simple70" height="200" width="500">
+              <div class="card-body">
+                <p id="articles" style="text-align:justify;">"BBC NEWS - Pengamat kebencanaan mengatakan pemerintah perlu memikirkan langkah-langkah untuk mengantisipasi bencana alam di saat pandemi virus corona..."</p>
+                <a href="https://www.bbc.com/indonesia/indonesia-52446120" class="btn btn-primary">Baca Selengkapnya</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 mt-3">
+            <div class="card" style="width: 20rem;">
+              <img src="https://ichef.bbci.co.uk/news/800/cpsprodpb/10E4C/production/_115869196_78ba39c9-7cd1-42c8-bb9f-29ce68ce4781.jpg" class="card-img-top" alt="simple70" height="200" width="500">
+              <div class="card-body">
+                <p id="articles" style="text-align:justify;">"BBC NEWS - Pro-kontra ancaman vonis mati untuk terduga pelaku korupsi anggaran pandemi, bisakah pelaku dijerat hukuman mati?..."</p>
+                <a href="https://www.bbc.com/indonesia/indonesia-55211319" class="btn btn-primary">Baca Selengkapnya</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 mt-3">
+            <div class="card" style="width: 20rem;">
+              <img src="https://ichef.bbci.co.uk/news/800/cpsprodpb/C4F0/production/_115961405_kantorkpudmakassar.jpg" class="card-img-top" alt="simple70" height="200" width="500">
+              <div class="card-body">
+                <p id="articles" style="text-align:justify;">"BBC NEWS - Pilkada: Ratusan petugas KPPS di Makassar reaktif Covid-19, 'partisipasi akan tetap ada, tapi sebagian warga cemas'.Muhammad Irham Wartawan BBC News Indonesia..."</p>
+                <a href="https://www.bbc.com/indonesia/indonesia-55235108" class="btn btn-primary">Baca Selengkapnya</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 mt-3">
+            <div class="card" style="width: 20rem;">
+              <img src="https://ichef.bbci.co.uk/news/800/cpsprodpb/1394B/production/_115930208_antarafoto-vaksin-covid-071220-ho-3.jpg" class="card-img-top" alt="simple70" height="200" width="500">
+              <div class="card-body">
+                <p id="articles" style="text-align:justify;">"BBC NEWS - Pemerintah Indonesia dan PT Bio Farma mengklaim vaksin Covid-19 buatan Sinovac sudah memenuhi seluruh faktor yang menjadi syarat dalam pemilihan vaksin..."</p>
+                <a href="https://www.bbc.com/indonesia/indonesia-55211319" class="btn btn-primary">Baca Selengkapnya</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      <!-- Footer -->
+      <footer class="page-footer font-small bg-dark mt-3">
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3 text-white">© 2020 Copyright</div>
+        <!-- Copyright -->
+      </footer>
+      <!-- Footer -->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+  </body>
+</html>
+<script>
+  $(document).ready(function(){
+
+    //panggil fungsi menampilkan semua data global
+    semuaData();
+    dataNegara();
+
+    //untuk refresh otomatis
+    setInterval(function(){
+      semuaData();
+      dataNegara();
+    }, 3000);
+
+    function semuaData(){
+      $.ajax({
+        url : 'https://coronavirus-19-api.herokuapp.com/all',
+        success : function(data){
+          try{
+            var json = data;
+            var kasus = data.cases;
+            var meninggal = data.deaths;
+            var sembuh = data.recovered;
+            $('#data-kasus').html(kasus);
+            $('#data-mati').html(meninggal);
+            $('#data-sembuh').html(sembuh);
+
+            
+          }catch{
+            alert('Error');
+          }
+        }
+      });
+    }
+    function dataNegara(){
+      $.ajax({
+        url : 'https://coronavirus-19-api.herokuapp.com/countries',
+        success : function(data){
+          try{
+            var json = data;
+            var html = [];
+
+            if(json.length > 0){
+              var i;
+              for(i = 0; i < json.length; i++){
+                var dataNegara = json[i];
+                var namaNegara = dataNegara.country;
+
+                if(namaNegara === 'Indonesia'){
+                  var kasus = dataNegara.cases;
+                  var sembuh = dataNegara.recovered;
+                  var mati = dataNegara.deaths;
+                  $('#data-id').html('Positif : '+kasus+' Orang <br> Sembuh : '+sembuh+' Orang <br> Meninggal : '+mati+' Orang')
+
+                }
+              }
+            }
+
+            
+          }catch{
+            alert('Mohon maaf telah terjadi kesalahan!!!');
+          }
+        }
+      });
+    }
+
+  });
+
+  $('#table-data').empty();
+  $.ajax({
+    method : 'GET',
+    url : 'https://coronavirus-19-api.herokuapp.com/countries',
+    success : function(response){
+      myArray = response;
+      console.log(response);
+      $.each(response,function(index,item){
+        $('#table-data').append(
+            "<tr>" +            
+            "<td id='countryId'>" + item.country + "</td>" +
+            "<td id='casesId'>" + item.cases + "</td>" +
+            "<td id='recoveredId'>" + item.recovered + "</td>" +
+            "<td id='deathsId'>" + item.deaths + "</td>" +
+            "</tr>"
+          );
+      });
+    }
+  });
+
+  function tableData(){
+    $.ajax({
+        method : 'GET',
+        url : 'https://coronavirus-19-api.herokuapp.com/countries',
+        success : function(response){
+          myArray = response;
+          console.log(response);
+          $.each(response,function(index,item){
+              $("#countryId").html(item.country);
+              $("#casesId").html(item.cases);
+              $("#recoveredId").html(item.recovered);
+              $("#deathsId").html(item.deaths);
+          });
+        }
+      });
+    }
+  
+</script>
